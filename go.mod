@@ -1,4 +1,4 @@
-module gitee.com/baixudong/blog
+module github.com/gospider007/blog
 
 go 1.21.0
 
