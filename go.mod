@@ -1,6 +1,6 @@
 module github.com/gospider007/blog
 
-go 1.21.0
+go 1.21.3
 
 require go.uber.org/zap v1.26.0
 
