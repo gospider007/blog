@@ -78,7 +78,6 @@ func (obj *Client) Fatal(val any, fields ...map[string]any) {
 }
 
 // 黑色:0,红色:1,绿色:2,黄色:3,蓝色:4,紫红色:5,青蓝色:6,白色:7
-// fgColor:字体颜色,bgColor:背景颜色
-func Color(fgColor, bgColor int, texts ...any) string {
-	return fmt.Sprintf("%c[0;%d;%dm%s%c[0m", 0x1B, 40+bgColor, 30+fgColor, fmt.Sprint(texts...), 0x1B)
+func Color(color int, texts ...any) string {
+	return fmt.Sprintf("%c[0;0;%dm%s%c[0m", 0x1B, 30+color, fmt.Sprint(texts...), 0x1B)
 }
