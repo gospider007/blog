@@ -53,7 +53,6 @@ func NewClient(fileName string, fields ...map[string]any) *Client {
 	config.ErrorOutputPaths = []string{fileName}
 	logger, err := config.Build()
 	if err != nil {
-		log.Print(err)
 		return nil
 	}
 	return &Client{logger: logger}
